@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css ">
+  <meta name="description"
+    content="Portfólio pessoal de Pedro Henrique Albani Nunes - Desenvolvedor Front-End em formação.">
+  <meta property="og:title" content="Portfólio - Pedro Henrique">
+  <meta property="og:description"
+    content="Confira meu portfólio e minhas formações em tecnologia e desenvolvimento web.">
+  <meta property="og:image" content="url-da-imagem-de-compartilhamento.jpg">
+  <meta property="og:url" content="https://seudominio.com ">
+  <title>Portfólio - Pedro Henrique</title>
+</head>
+
+<body>
+  <!-- Background Vídeo -->
+  <div class="background-video">
+    <video id="bgVideo" autoplay muted loop playsinline>
+      <source src="arquivos/telaDeFundo.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos.
+    </video>
+  </div>
+  <!-- Cabeçalho -->
+  <header class="main-header">
+    <div id="typed-text"></div>
+  </header>
+
+  <main class="main-content">
+
+    <!-- Sessão Sobre -->
+    <section id="sobre" class="card card-superior">
+      <div class="bio-container">
+        <h2>Minha bio</h2>
+        <div class="bio">
+          <p><span id="typed-bio"></span></p>
+        </div>
+      </div>
+      
+      <div class="perfil-container">
+        <img src="arquivos/foto-perfil.jpeg" alt="Foto de Pedro Henrique Albani Nunes" class="perfil-imagem">
+      </div>
+    </section>
+
+    <!-- Sessão Formações -->
+    <section id="formacoes" class="card card-medio">
+      <h2>Minhas Formações</h2>
+      <ul class="lista-formacoes">
+        <li class="formacao-item">
+          <a href="arquivos/formacao1.pdf" target="_blank">Formação em Git/GitHub</a>
+        </li>
+        <!-- <li class="formacao-item">
+          <a href="arquivos/formacao2.pdf" target="_blank">Formação 2</a>
+        </li>
+        <li class="formacao-item">
+          <a href="arquivos/formacao3.pdf" target="_blank">Formação 3</a>
+        </li>
+        <li class="formacao-item">
+          <a href="arquivos/formacao4.pdf" target="_blank">Formação 4</a>
+        </li>
+        <li class="formacao-item">
+          <a href="arquivos/formacao5.pdf" target="_blank">Formação 5</a>
+        </li>
+        <li class="formacao-item">
+          <a href="arquivos/formacao6.pdf" target="_blank">Formação 6</a>
+        </li> -->
+      </ul>
+    </section>
+
+
+    <!-- Sessão Contato -->
+    <!-- Sessão Contato -->
+    <section id="contato" class="card card-inferior">
+      <h2>Redes Profissionais</h2>
+      <ul class="lista-contatos">
+        <li class="contato-item" id="github">
+          <i class="fab fa-github" style="margin-right: 8px;"></i>
+          GitHub
+        </li>
+
+        <li class="contato-item" id="linkedin">
+          <i class="fab fa-linkedin-in" style="margin-right: 8px;"></i>
+          LinkedIn
+        </li>
+
+        <li class="contato-item" id="copiar-email">
+          <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+          E-mail
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Todos os direitos reservados a Pedro Henrique Albani Nunes ©</p>
+  </footer>
+
+  <!-- Notificação personalizada -->
+  <div id="notificacao">E-mail copiado!</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
