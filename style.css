@@ -334,56 +334,91 @@ a{
 }
 
 
-/* Para celular */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1024px) {
+  .perfil-imagem {
+    width: 280px;
+    height: 280px;
+  }
+
+  .card-superior {
+    gap: 20px;
+  }
+
+  .lista-formacoes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 768px) {
+  .perfil-imagem {
+    width: 220px;
+    height: 220px;
+  }
+
   .card-superior {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .perfil-imagem {
-    width: 200px;
-    height: 200px;
+  .bio-container {
+    max-width: 100%;
   }
 
-  .bio-container h2 {
-    text-align: center;
+  .card-medio,
+  .card-inferior {
+    width: 100%;
   }
-}
 
-@media (max-width: 768px) {
-  .lista-formacoes {
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 colunas em tablets */
+  .main-content {
+    max-width: 95%;
   }
-}
 
-@media (max-width: 480px) {
   .lista-formacoes {
     grid-template-columns: 1fr;
-    /* Apenas 1 coluna em celulares */
+  }
+
+  .formacao-item {
+    min-height: auto;
+    padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .contato-item {
-    min-width: 130px;
-    min-height: 50px;
-    font-size: 0.9rem;
-    padding: 12px 16px;
-  }
-
   .perfil-imagem {
     width: 150px;
     height: 150px;
   }
-}
 
-@media (max-width: 768px) {
-  .main-content {
-    max-width: 95%;
-    margin: 5% auto;
+  .main-header h2 {
+    font-size: 1.4rem;
+  }
+
+  #typed-text {
+    font-size: 1.2rem;
+  }
+
+  .bio p {
+    font-size: 1rem;
+  }
+
+  .contato-item {
+    min-width: 120px;
+    min-height: 50px;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .card {
+    padding: 25px 15px;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+    top: 5%;
+    left: 5%;
   }
 }
