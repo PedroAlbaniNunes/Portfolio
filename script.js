@@ -58,12 +58,6 @@ function typeWriter() {
   }
 }
 
-// Inicia o efeito
-window.onload = () => {
-  typeWriter();
-};
-
-
 // Texto da Bio
 const bioText = "Meu nome é Pedro Henrique Albani Nunes, sou estudante de\nSistemas de Informação no Ifes Campus Serra, tenho 21 anos \ne ainda não tenho experiências profissionais. Sou um homem \nestudioso e esforçado, estou sempre atrás de aprender novos \nconhecimentos e me implementar como futuro profissional.";
 
@@ -78,7 +72,7 @@ function typeWriterTitulo() {
   if (indexTitulo < fraseAleatoria.length) {
     typedTextElement.textContent += fraseAleatoria.charAt(indexTitulo);
     indexTitulo++;
-    setTimeout(typeWriterTitulo, 80);
+    setTimeout(typeWriterTitulo, 100);
   }
 }
 
@@ -97,5 +91,5 @@ const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
 // Iniciar efeitos após a página carregar
 window.onload = () => {
   typeWriterTitulo();
-  setTimeout(typeWriterBio, 2000); // Começa a digitar a bio depois do título
+  typeWriterBio(); // Sem setTimeout
 };
